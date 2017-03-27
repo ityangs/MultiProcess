@@ -18,7 +18,7 @@ require_once 'MultiProcess.class.php';
 #### 单次调用:有一个很大的工作需要分片处理 
 
 ```php
-$mp = new MultiProcess(3, 'myProcessName'); // 4代表子进程数, 'myProcessName'是进程的名字
+$mp = new MultiProcess(3, 'myProcessName'); // 3代表子进程数, 'myProcessName'是进程的名字
 $mp->master(function ($mp) {
     $mp->submit([0, 1000]);
     $mp->submit([1000, 2000]);
@@ -40,7 +40,7 @@ $mp->master(function ($mp) {
 #### 循环调用的时候:从任务队列获取任务常驻内存
 
 ```php
-$mp = new MultiProcess(3, 'myProcessName'); // 4代表子进程数, 'myProcessName'是进程的名字
+$mp = new MultiProcess(3, 'myProcessName'); // 代表子进程数, 'myProcessName'是进程的名字
 
 $url = "http://www.baidu.com/";
 $mp->master(function ($mp)
