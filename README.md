@@ -1,4 +1,4 @@
-# MultiProcess
+# MultiProcess PHP多进程控制类库
 Simple php multi-process control library  精简的PHP多进程控制类库。多进程类库封装了主进程和子进程之间的通信，以及日志打印，还有错误处理等基础功能，方便地利用系统的多个cpu来完成一些异步任务
 
 ## 使用步骤
