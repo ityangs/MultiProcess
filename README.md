@@ -3,7 +3,7 @@ Simple php multi-process control library  精简的PHP多进程控制类库。�
 
 ## 使用步骤
 
-### - 安装
+### 安装
 
 引入多进程类库
 ```php
@@ -12,7 +12,7 @@ require_once 'MultiProcess.class.php';
 
 ```
 
-### - 使用案例
+### 使用案例
 
 
 #### 单次调用:有一个很大的工作需要分片处理 
